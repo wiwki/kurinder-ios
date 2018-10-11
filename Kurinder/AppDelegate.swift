@@ -8,17 +8,97 @@
 
 import UIKit
 import Firebase
+import FirebaseUI
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if let user = Auth.auth().currentUser {
+            print(user)
+            let editVC = NameEditController()
+            window?.rootViewController = UINavigationController(rootViewController: editVC)
+        }
+        else {
+            let authUI = FUIAuth.defaultAuthUI()
+            // You need to adopt a FUIAuthDelegate protocol to receive callback
+            authUI?.delegate = self
+            let providers: [FUIAuthProvider] = [
+                FUIPhoneAuth(authUI: authUI!)
+            ]
+            authUI?.isSignInWithEmailHidden = true
+            authUI?.shouldHideCancelButton = true
+            authUI?.providers = providers
+            
+            let authViewController = authUI!.authViewController()
+            let authVCView = authViewController.view!
+            authViewController.topViewController?.view.backgroundColor = .white
+            authViewController.isNavigationBarHidden = true
+            
+            let mainLabel = UILabel(frame: CGRect())
+            mainLabel.font = UIFont(name: "GothamRounded-Book", size: 20.8)
+            mainLabel.translatesAutoresizingMaskIntoConstraints = false
+            mainLabel.text = "Discover new and interesting people nearby."
+            mainLabel.textColor = UIColor.darkGray
+            mainLabel.numberOfLines = 0
+            mainLabel.textAlignment = .center
+            authVCView.addSubview(mainLabel)
+            mainLabel.leftAnchor.constraint(equalTo: authVCView.leftAnchor, constant: 20).isActive = true
+            mainLabel.rightAnchor.constraint(equalTo: authVCView.rightAnchor, constant: -20).isActive = true
+            mainLabel.topAnchor.constraint(equalTo: authVCView.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+            
+            let image = UIImageView(frame: CGRect())
+            image.backgroundColor = .red
+            image.translatesAutoresizingMaskIntoConstraints = false
+            authVCView.addSubview(image)
+            image.leftAnchor.constraint(equalTo: authVCView.leftAnchor, constant: 65).isActive = true
+            image.rightAnchor.constraint(equalTo: authVCView.rightAnchor, constant: -65).isActive = true
+            image.topAnchor.constraint(equalTo: mainLabel.bottomAnchor, constant: 20).isActive = true
+            image.heightAnchor.constraint(equalTo: image.widthAnchor, multiplier: 4 / 2.8).isActive = true
+            image.layer.cornerRadius = 10
+            image.layer.masksToBounds = true
+            image.image = UIImage(named: "HelloImage")
+            
+            image.layer.shadowColor = UIColor.black.cgColor
+            image.layer.shadowOpacity = 0.5
+            image.layer.shadowOffset = CGSize(width: -1, height: 1)
+            image.layer.shadowRadius = 1
+            image.layer.shadowPath = UIBezierPath(rect: image.bounds).cgPath
+            image.layer.shouldRasterize = true
+            image.layer.rasterizationScale = UIScreen.main.scale
+            image.backgroundColor = .blue
+            image.contentMode = .scaleAspectFill
+            
+            window?.rootViewController = authViewController
+        }
+        window?.makeKeyAndVisible()
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            return true
+        }
+        return false
+    }
+    
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        // handle user (`authDataResult.user`) and error as necessary
+        if let error = error {
+            print(error.localizedDescription)
+        }
+        else if let user = authDataResult?.user {
+            print(user.phoneNumber!)
+            let editVC = NameEditController()
+            window?.rootViewController = UINavigationController(rootViewController: editVC)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

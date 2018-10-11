@@ -9,10 +9,22 @@
 /* Begin PBXBuildFile section */
 		BBEC8EBFA6FD3B3CC9B1D268 /* Pods_Kurinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3755F7AEAB7784F2236451C /* Pods_Kurinder.framework */; };
 		F022C8A2216C5D2E0086018D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022C8A1216C5D2E0086018D /* AppDelegate.swift */; };
-		F022C8A4216C5D2E0086018D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022C8A3216C5D2E0086018D /* ViewController.swift */; };
-		F022C8A7216C5D2E0086018D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F022C8A5216C5D2E0086018D /* Main.storyboard */; };
+		F022C8A4216C5D2E0086018D /* NameEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022C8A3216C5D2E0086018D /* NameEditController.swift */; };
 		F022C8A9216C5D300086018D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F022C8A8216C5D300086018D /* Assets.xcassets */; };
 		F022C8AC216C5D300086018D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F022C8AA216C5D300086018D /* LaunchScreen.storyboard */; };
+		F031971D216CE864009BC8E8 /* GothamRoundedMedium_21022.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0319711216CE862009BC8E8 /* GothamRoundedMedium_21022.ttf */; };
+		F031971E216CE864009BC8E8 /* GothamRounded-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319712216CE863009BC8E8 /* GothamRounded-BoldItalic.otf */; };
+		F031971F216CE864009BC8E8 /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319713216CE863009BC8E8 /* GothamRounded-Book.otf */; };
+		F0319720216CE864009BC8E8 /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319714216CE863009BC8E8 /* GothamRounded-Bold.otf */; };
+		F0319721216CE864009BC8E8 /* GothamRounded-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319715216CE863009BC8E8 /* GothamRounded-BookItalic.otf */; };
+		F0319722216CE864009BC8E8 /* GothamRounded-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319716216CE863009BC8E8 /* GothamRounded-LightItalic.otf */; };
+		F0319723216CE864009BC8E8 /* GothamRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319717216CE863009BC8E8 /* GothamRounded-Light.otf */; };
+		F0319724216CE864009BC8E8 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319718216CE864009BC8E8 /* GothamRounded-Medium.otf */; };
+		F0319725216CE864009BC8E8 /* GothamRounded-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0319719216CE864009BC8E8 /* GothamRounded-MediumItalic.otf */; };
+		F0319726216CE864009BC8E8 /* GothamRoundedBold_21016.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F031971A216CE864009BC8E8 /* GothamRoundedBold_21016.ttf */; };
+		F0319727216CE864009BC8E8 /* GothamRoundedLight_21020.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F031971B216CE864009BC8E8 /* GothamRoundedLight_21020.ttf */; };
+		F0319728216CE864009BC8E8 /* GothamRoundedBook_21018.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F031971C216CE864009BC8E8 /* GothamRoundedBook_21018.ttf */; };
+		F0410D26216CD15A009BDDF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0410D25216CD15A009BDDF7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +33,24 @@
 		C3755F7AEAB7784F2236451C /* Pods_Kurinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kurinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F022C89E216C5D2E0086018D /* Kurinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kurinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F022C8A1216C5D2E0086018D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F022C8A3216C5D2E0086018D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F022C8A6216C5D2E0086018D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F022C8A3216C5D2E0086018D /* NameEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEditController.swift; sourceTree = "<group>"; };
 		F022C8A8216C5D300086018D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F022C8AB216C5D300086018D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F022C8AD216C5D300086018D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F031970E216CD789009BC8E8 /* Kurinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kurinder.entitlements; sourceTree = "<group>"; };
+		F0319711216CE862009BC8E8 /* GothamRoundedMedium_21022.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedMedium_21022.ttf; sourceTree = "<group>"; };
+		F0319712216CE863009BC8E8 /* GothamRounded-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-BoldItalic.otf"; sourceTree = "<group>"; };
+		F0319713216CE863009BC8E8 /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
+		F0319714216CE863009BC8E8 /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
+		F0319715216CE863009BC8E8 /* GothamRounded-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-BookItalic.otf"; sourceTree = "<group>"; };
+		F0319716216CE863009BC8E8 /* GothamRounded-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-LightItalic.otf"; sourceTree = "<group>"; };
+		F0319717216CE863009BC8E8 /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Light.otf"; sourceTree = "<group>"; };
+		F0319718216CE864009BC8E8 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
+		F0319719216CE864009BC8E8 /* GothamRounded-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-MediumItalic.otf"; sourceTree = "<group>"; };
+		F031971A216CE864009BC8E8 /* GothamRoundedBold_21016.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedBold_21016.ttf; sourceTree = "<group>"; };
+		F031971B216CE864009BC8E8 /* GothamRoundedLight_21020.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedLight_21020.ttf; sourceTree = "<group>"; };
+		F031971C216CE864009BC8E8 /* GothamRoundedBook_21018.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedBook_21018.ttf; sourceTree = "<group>"; };
+		F0410D25216CD15A009BDDF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +103,35 @@
 		F022C8A0216C5D2E0086018D /* Kurinder */ = {
 			isa = PBXGroup;
 			children = (
+				F0319710216CE82B009BC8E8 /* Fonts */,
+				F031970E216CD789009BC8E8 /* Kurinder.entitlements */,
+				F0410D25216CD15A009BDDF7 /* GoogleService-Info.plist */,
 				F022C8A1216C5D2E0086018D /* AppDelegate.swift */,
-				F022C8A3216C5D2E0086018D /* ViewController.swift */,
-				F022C8A5216C5D2E0086018D /* Main.storyboard */,
+				F022C8A3216C5D2E0086018D /* NameEditController.swift */,
 				F022C8A8216C5D300086018D /* Assets.xcassets */,
 				F022C8AA216C5D300086018D /* LaunchScreen.storyboard */,
 				F022C8AD216C5D300086018D /* Info.plist */,
 			);
 			path = Kurinder;
+			sourceTree = "<group>";
+		};
+		F0319710216CE82B009BC8E8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F0319714216CE863009BC8E8 /* GothamRounded-Bold.otf */,
+				F0319712216CE863009BC8E8 /* GothamRounded-BoldItalic.otf */,
+				F0319713216CE863009BC8E8 /* GothamRounded-Book.otf */,
+				F0319715216CE863009BC8E8 /* GothamRounded-BookItalic.otf */,
+				F0319717216CE863009BC8E8 /* GothamRounded-Light.otf */,
+				F0319716216CE863009BC8E8 /* GothamRounded-LightItalic.otf */,
+				F0319718216CE864009BC8E8 /* GothamRounded-Medium.otf */,
+				F0319719216CE864009BC8E8 /* GothamRounded-MediumItalic.otf */,
+				F031971A216CE864009BC8E8 /* GothamRoundedBold_21016.ttf */,
+				F031971C216CE864009BC8E8 /* GothamRoundedBook_21018.ttf */,
+				F031971B216CE864009BC8E8 /* GothamRoundedLight_21020.ttf */,
+				F0319711216CE862009BC8E8 /* GothamRoundedMedium_21022.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +146,7 @@
 				F022C89B216C5D2E0086018D /* Frameworks */,
 				F022C89C216C5D2E0086018D /* Resources */,
 				F2950AB7FCFE2B51F9341335 /* [CP] Embed Pods Frameworks */,
+				F3DB79A8A8CCB3FF97016BDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,6 +169,11 @@
 				TargetAttributes = {
 					F022C89D216C5D2E0086018D = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -148,9 +200,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0319724216CE864009BC8E8 /* GothamRounded-Medium.otf in Resources */,
+				F031971F216CE864009BC8E8 /* GothamRounded-Book.otf in Resources */,
+				F0319728216CE864009BC8E8 /* GothamRoundedBook_21018.ttf in Resources */,
 				F022C8AC216C5D300086018D /* LaunchScreen.storyboard in Resources */,
+				F0319721216CE864009BC8E8 /* GothamRounded-BookItalic.otf in Resources */,
+				F031971D216CE864009BC8E8 /* GothamRoundedMedium_21022.ttf in Resources */,
+				F0319720216CE864009BC8E8 /* GothamRounded-Bold.otf in Resources */,
+				F0319725216CE864009BC8E8 /* GothamRounded-MediumItalic.otf in Resources */,
+				F0319727216CE864009BC8E8 /* GothamRoundedLight_21020.ttf in Resources */,
+				F0319726216CE864009BC8E8 /* GothamRoundedBold_21016.ttf in Resources */,
+				F0319722216CE864009BC8E8 /* GothamRounded-LightItalic.otf in Resources */,
+				F0319723216CE864009BC8E8 /* GothamRounded-Light.otf in Resources */,
+				F0410D26216CD15A009BDDF7 /* GoogleService-Info.plist in Resources */,
 				F022C8A9216C5D300086018D /* Assets.xcassets in Resources */,
-				F022C8A7216C5D2E0086018D /* Main.storyboard in Resources */,
+				F031971E216CE864009BC8E8 /* GothamRounded-BoldItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,19 +252,47 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Kurinder/Pods-Kurinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kurinder/Pods-Kurinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DB79A8A8CCB3FF97016BDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kurinder/Pods-Kurinder-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kurinder/Pods-Kurinder-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -210,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F022C8A4216C5D2E0086018D /* ViewController.swift in Sources */,
+				F022C8A4216C5D2E0086018D /* NameEditController.swift in Sources */,
 				F022C8A2216C5D2E0086018D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,14 +310,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F022C8A5216C5D2E0086018D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F022C8A6216C5D2E0086018D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F022C8AA216C5D300086018D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +442,7 @@
 			baseConfigurationReference = 73A40AC4F1D8A7DE09BE71E7 /* Pods-Kurinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kurinder/Kurinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V75RFW43CG;
 				INFOPLIST_FILE = Kurinder/Info.plist;
@@ -377,6 +462,7 @@
 			baseConfigurationReference = 2F68CBA59BBE288746DD32C6 /* Pods-Kurinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kurinder/Kurinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V75RFW43CG;
 				INFOPLIST_FILE = Kurinder/Info.plist;

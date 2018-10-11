@@ -7,4 +7,7 @@ target 'Kurinder' do
 
   # Pods for Kurinder
   pod 'Firebase/Core'
+  pod 'FirebaseUI/Auth', '~> 5.0'
+  pod 'FirebaseUI/Phone'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
 end
